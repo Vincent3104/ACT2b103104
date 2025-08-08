@@ -1,6 +1,3 @@
-
-import javax.swing.JOptionPane;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -10,12 +7,12 @@ import javax.swing.JOptionPane;
  *
  * @author CL1-PC07
  */
-public class NewJFrame extends javax.swing.JFrame {
+public class NewJFrame5 extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame
+     * Creates new form NewJFrame5
      */
-    public NewJFrame() {
+    public NewJFrame5() {
         initComponents();
     }
 
@@ -28,43 +25,11 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbl = new javax.swing.JTextField();
-        btnVerify = new javax.swing.JButton();
-        txtAge = new javax.swing.JTextField();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl.setText("AGE VERIFICATION");
-        getContentPane().add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, 70));
-
-        btnVerify.setText("Verify");
-        btnVerify.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerifyActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnVerify, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 110, -1));
-        getContentPane().add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 110, 60));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnVerifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerifyActionPerformed
-        int age = Integer.parseInt(txtAge.getText());
-        if (age >= 18 && age <=100)
-        {
-        JOptionPane.showMessageDialog(null, "ABLE TO VOTE", "VOTING", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if (age <= 17 && age >= 5)
-        {
-        JOptionPane.showMessageDialog(null, "UNABLE TO VOTE", "VOTING", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else
-        {
-            
-        }
-    }//GEN-LAST:event_btnVerifyActionPerformed
 
     /**
      * @param args the command line arguments
@@ -83,27 +48,24 @@ public class NewJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new NewJFrame().setVisible(true);
+                new NewJFrame5().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnVerify;
-    private javax.swing.JTextField lbl;
-    private javax.swing.JTextField txtAge;
     // End of variables declaration//GEN-END:variables
 }
