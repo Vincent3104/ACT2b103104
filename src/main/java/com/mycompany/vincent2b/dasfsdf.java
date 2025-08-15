@@ -36,6 +36,7 @@ public class dasfsdf extends javax.swing.JFrame {
         txtPlayer2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,6 +65,9 @@ public class dasfsdf extends javax.swing.JFrame {
 
         jLabel5.setText("Player2");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, -1));
+
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -160,6 +164,7 @@ public class dasfsdf extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtPlayer1;
     private javax.swing.JTextField txtPlayer2;
     // End of variables declaration//GEN-END:variables
