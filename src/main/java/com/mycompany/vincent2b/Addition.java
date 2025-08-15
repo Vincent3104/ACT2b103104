@@ -43,8 +43,8 @@ public class Addition extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 80, -1));
-        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 80, -1));
+        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 110, -1));
+        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 110, -1));
 
         lblDiff.setText("Diff");
         getContentPane().add(lblDiff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 100, -1));
@@ -139,7 +139,7 @@ public class Addition extends javax.swing.JFrame {
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
         this.dispose();
-        new division().show(true);
+        new Subtraction().show(true);
     }//GEN-LAST:event_btnSubActionPerformed
 
     private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
