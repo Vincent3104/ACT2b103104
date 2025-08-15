@@ -26,56 +26,122 @@ public class Addition extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        diff = new javax.swing.JLabel();
-        pro = new javax.swing.JLabel();
+        txtNum2 = new javax.swing.JTextField();
+        txtNum1 = new javax.swing.JTextField();
+        lblDiff = new javax.swing.JLabel();
+        lblPro = new javax.swing.JLabel();
         lblQuo = new javax.swing.JLabel();
         sum = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        sum1 = new javax.swing.JLabel();
+        btnMul = new javax.swing.JButton();
+        btnSub = new javax.swing.JButton();
+        btnDiv = new javax.swing.JButton();
+        btnMain = new javax.swing.JButton();
+        lblSum = new javax.swing.JLabel();
         sum2 = new javax.swing.JLabel();
+        btnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 71, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 71, -1));
+        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 80, -1));
+        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 80, -1));
 
-        diff.setText("Diff");
-        getContentPane().add(diff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 50, -1));
+        lblDiff.setText("Diff");
+        getContentPane().add(lblDiff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 100, -1));
 
-        pro.setText("Pro");
-        getContentPane().add(pro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 40, -1));
+        lblPro.setText("Pro");
+        getContentPane().add(lblPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 110, -1));
 
         lblQuo.setText("Quo");
-        getContentPane().add(lblQuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 30, -1));
+        getContentPane().add(lblQuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 130, -1));
 
         sum.setText("Num2");
         getContentPane().add(sum, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
 
-        jButton1.setText("Go To  Multiplication");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, -1));
+        btnMul.setText("Go To  Multiplication");
+        btnMul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMulActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMul, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, -1));
 
-        jButton2.setText("Go To Subtraction");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+        btnSub.setText("Go To Subtraction");
+        btnSub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
 
-        jButton3.setText("Go To Division");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
+        btnDiv.setText("Go To Division");
+        btnDiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDivActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnDiv, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
 
-        jButton4.setText("Go To Main");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+        btnMain.setText("Go To Main");
+        btnMain.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMainActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
-        sum1.setText("Sum");
-        getContentPane().add(sum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 40, -1));
+        lblSum.setText("Sum");
+        getContentPane().add(lblSum, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 120, -1));
 
         sum2.setText("Num1");
         getContentPane().add(sum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
+        btnAdd.setText("Add");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        int num1 = Integer.parseInt(txtNum1.getText());
+        int num2 = Integer.parseInt(txtNum2.getText());
+        
+        
+        int add = num1 + num2 ;
+        int sub = num1 - num2;
+        int multi = num1 * num2;
+        int division = num1 / num2;
+        
+        lblSum.setText("The sum is" + add);
+        lblDiff.setText("The diff is" + sub);
+        lblPro.setText("The product is" + multi);
+        lblQuo.setText("The quotient is" + division);
+        
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
+        this.dispose();
+        new division().show(true);
+    }//GEN-LAST:event_btnDivActionPerformed
+
+    private void btnMainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainActionPerformed
+        this.dispose();
+        new Addition().show(true);
+    }//GEN-LAST:event_btnMainActionPerformed
+
+    private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
+        this.dispose();
+        new division().show(true);
+    }//GEN-LAST:event_btnSubActionPerformed
+
+    private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
+        this.dispose();
+        new Multiply().show(true);
+    }//GEN-LAST:event_btnMulActionPerformed
 
     /**
      * @param args the command line arguments
@@ -113,17 +179,18 @@ public class Addition extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel diff;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnDiv;
+    private javax.swing.JButton btnMain;
+    private javax.swing.JButton btnMul;
+    private javax.swing.JButton btnSub;
+    private javax.swing.JLabel lblDiff;
+    private javax.swing.JLabel lblPro;
     private javax.swing.JLabel lblQuo;
-    private javax.swing.JLabel pro;
+    private javax.swing.JLabel lblSum;
     private javax.swing.JLabel sum;
-    private javax.swing.JLabel sum1;
     private javax.swing.JLabel sum2;
+    private javax.swing.JTextField txtNum1;
+    private javax.swing.JTextField txtNum2;
     // End of variables declaration//GEN-END:variables
 }
