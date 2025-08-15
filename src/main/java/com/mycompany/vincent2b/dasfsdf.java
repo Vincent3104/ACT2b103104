@@ -66,7 +66,7 @@ public class dasfsdf extends javax.swing.JFrame {
         jLabel5.setText("Player2");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, -1, -1));
 
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("RPS");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
 
         pack();
