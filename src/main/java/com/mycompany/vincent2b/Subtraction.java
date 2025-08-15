@@ -39,6 +39,7 @@ public class Subtraction extends javax.swing.JFrame {
         sum1 = new javax.swing.JLabel();
         sum2 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -97,6 +98,9 @@ public class Subtraction extends javax.swing.JFrame {
 
         jButton5.setText("Sub");
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
+
+        jLabel1.setText("Subtraction");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -163,6 +167,7 @@ public class Subtraction extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lblQuo;
