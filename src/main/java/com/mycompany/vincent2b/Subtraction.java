@@ -26,34 +26,31 @@ public class Subtraction extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        txtNum2 = new javax.swing.JTextField();
+        txtNum1 = new javax.swing.JTextField();
         diff = new javax.swing.JLabel();
-        pro = new javax.swing.JLabel();
-        lblQuo = new javax.swing.JLabel();
         sum = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        sum1 = new javax.swing.JLabel();
         sum2 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 71, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 71, -1));
+
+        txtNum2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNum2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 71, -1));
+        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 71, -1));
 
         diff.setText("Diff");
-        getContentPane().add(diff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 50, -1));
-
-        pro.setText("Pro");
-        getContentPane().add(pro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 40, -1));
-
-        lblQuo.setText("Quo");
-        getContentPane().add(lblQuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 30, -1));
+        getContentPane().add(diff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 160, -1));
 
         sum.setText("Num2");
         getContentPane().add(sum, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
@@ -90,14 +87,16 @@ public class Subtraction extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
-        sum1.setText("Sum");
-        getContentPane().add(sum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 40, -1));
-
         sum2.setText("Num1");
         getContentPane().add(sum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jButton5.setText("Sub");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, -1, -1));
 
         jLabel1.setText("Subtraction");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
@@ -124,6 +123,21 @@ public class Subtraction extends javax.swing.JFrame {
         this.dispose();
         new division().show(true);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+int num1 = Integer.parseInt(txtNum1.getText());
+        int num2 = Integer.parseInt(txtNum2.getText());
+        
+        
+        int sub = num1 - num2 ;
+        
+        
+        diff.setText("The difference is" + sub);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void txtNum2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNum2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,12 +182,9 @@ public class Subtraction extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel lblQuo;
-    private javax.swing.JLabel pro;
     private javax.swing.JLabel sum;
-    private javax.swing.JLabel sum1;
     private javax.swing.JLabel sum2;
+    private javax.swing.JTextField txtNum1;
+    private javax.swing.JTextField txtNum2;
     // End of variables declaration//GEN-END:variables
 }

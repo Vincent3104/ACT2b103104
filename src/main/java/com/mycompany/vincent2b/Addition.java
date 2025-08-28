@@ -28,9 +28,6 @@ public class Addition extends javax.swing.JFrame {
 
         txtNum2 = new javax.swing.JTextField();
         txtNum1 = new javax.swing.JTextField();
-        lblDiff = new javax.swing.JLabel();
-        lblPro = new javax.swing.JLabel();
-        lblQuo = new javax.swing.JLabel();
         sum = new javax.swing.JLabel();
         btnMul = new javax.swing.JButton();
         btnSub = new javax.swing.JButton();
@@ -45,15 +42,6 @@ public class Addition extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 110, -1));
         getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 110, -1));
-
-        lblDiff.setText("Diff");
-        getContentPane().add(lblDiff, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 100, -1));
-
-        lblPro.setText("Pro");
-        getContentPane().add(lblPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 110, -1));
-
-        lblQuo.setText("Quo");
-        getContentPane().add(lblQuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 130, -1));
 
         sum.setText("Num2");
         getContentPane().add(sum, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
@@ -91,7 +79,7 @@ public class Addition extends javax.swing.JFrame {
         getContentPane().add(btnMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
         lblSum.setText("Sum");
-        getContentPane().add(lblSum, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 120, -1));
+        getContentPane().add(lblSum, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, -1));
 
         sum2.setText("Num1");
         getContentPane().add(sum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
@@ -116,14 +104,9 @@ public class Addition extends javax.swing.JFrame {
         
         
         int add = num1 + num2 ;
-        int sub = num1 - num2;
-        int multi = num1 * num2;
-        int division = num1 / num2;
+        
         
         lblSum.setText("The sum is" + add);
-        lblDiff.setText("The diff is" + sub);
-        lblPro.setText("The product is" + multi);
-        lblQuo.setText("The quotient is" + division);
         
     }//GEN-LAST:event_btnAddActionPerformed
 
@@ -189,9 +172,6 @@ public class Addition extends javax.swing.JFrame {
     private javax.swing.JButton btnMul;
     private javax.swing.JButton btnSub;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblDiff;
-    private javax.swing.JLabel lblPro;
-    private javax.swing.JLabel lblQuo;
     private javax.swing.JLabel lblSum;
     private javax.swing.JLabel sum;
     private javax.swing.JLabel sum2;
