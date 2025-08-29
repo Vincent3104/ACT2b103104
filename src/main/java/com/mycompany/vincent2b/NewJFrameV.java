@@ -44,7 +44,7 @@ public class NewJFrameV extends javax.swing.JFrame {
                 btnVerifyActionPerformed(evt);
             }
         });
-        getContentPane().add(btnVerify, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 110, -1));
+        getContentPane().add(btnVerify, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 110, -1));
         getContentPane().add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 110, 60));
 
         pack();

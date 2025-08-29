@@ -126,7 +126,7 @@ int num1 = Integer.parseInt(txtNum1.getText());
         int mul = num1 * num2 ;
         
         
-        pro.setText("The product is" +mul);        // TODO add your handling code here:
+        pro.setText("The product is:" +mul);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

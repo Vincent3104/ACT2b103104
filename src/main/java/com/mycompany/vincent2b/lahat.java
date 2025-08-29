@@ -6,14 +6,14 @@ package com.mycompany.vincent2b;
 
 /**
  *
- * @author CL1-PC04
+ * @author CL1-PC13
  */
-public class Addition extends javax.swing.JFrame {
+public class lahat extends javax.swing.JFrame {
 
     /**
-     * Creates new form Addition
+     * Creates new form lahat
      */
-    public Addition() {
+    public lahat() {
         initComponents();
     }
 
@@ -33,10 +33,12 @@ public class Addition extends javax.swing.JFrame {
         btnSub = new javax.swing.JButton();
         btnDiv = new javax.swing.JButton();
         btnMain = new javax.swing.JButton();
-        lblSum = new javax.swing.JLabel();
+        lblpro = new javax.swing.JLabel();
         sum2 = new javax.swing.JLabel();
         btnAdd = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblSum1 = new javax.swing.JLabel();
+        lblSum2 = new javax.swing.JLabel();
+        lblquo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -78,13 +80,13 @@ public class Addition extends javax.swing.JFrame {
         });
         getContentPane().add(btnMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
-        lblSum.setText("Sum");
-        getContentPane().add(lblSum, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, -1));
+        lblpro.setText("Pro");
+        getContentPane().add(lblpro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 120, -1));
 
         sum2.setText("Num1");
         getContentPane().add(sum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
-        btnAdd.setText("Add");
+        btnAdd.setText("Compute");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
@@ -92,23 +94,27 @@ public class Addition extends javax.swing.JFrame {
         });
         getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, -1, -1));
 
-        jLabel1.setText("Addition");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
+        lblSum1.setText("Sum");
+        getContentPane().add(lblSum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 120, -1));
+
+        lblSum2.setText("diff");
+        getContentPane().add(lblSum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 120, -1));
+
+        lblquo.setText("Quo");
+        getContentPane().add(lblquo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 120, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        int num1 = Integer.parseInt(txtNum1.getText());
-        int num2 = Integer.parseInt(txtNum2.getText());
-        
-        
-        int add = num1 + num2 ;
-        
-        
-        lblSum.setText("The sum is:" + add);
-        
-    }//GEN-LAST:event_btnAddActionPerformed
+    private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
+        this.dispose();
+        new Multiply().show(true);
+    }//GEN-LAST:event_btnMulActionPerformed
+
+    private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
+        this.dispose();
+        new Subtraction().show(true);
+    }//GEN-LAST:event_btnSubActionPerformed
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
         this.dispose();
@@ -120,15 +126,26 @@ public class Addition extends javax.swing.JFrame {
         new Addition().show(true);
     }//GEN-LAST:event_btnMainActionPerformed
 
-    private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
-        this.dispose();
-        new Subtraction().show(true);
-    }//GEN-LAST:event_btnSubActionPerformed
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+int num1 = Integer.parseInt(txtNum1.getText());
+        int num2 = Integer.parseInt(txtNum2.getText());
+        
+        
+        int add = num1 + num2 ;
+        int sub = num1 - num2 ;
+        int mul = num1 * num2 ;
+        int div = num1 / num2 ;
+        
+        lblSum1.setText("The sum is:" + add);
+        lblSum2.setText("The sum is:" + sub);
+        lblpro.setText("The sum is:" + mul);
+        lblquo.setText("The sum is:" + div);
+        
+        
+        
+        
 
-    private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
-        this.dispose();
-        new Multiply().show(true);
-    }//GEN-LAST:event_btnMulActionPerformed
+    }//GEN-LAST:event_btnAddActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,20 +164,20 @@ public class Addition extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Addition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lahat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Addition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lahat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Addition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lahat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Addition.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lahat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Addition().setVisible(true);
+                new lahat().setVisible(true);
             }
         });
     }
@@ -171,8 +188,10 @@ public class Addition extends javax.swing.JFrame {
     private javax.swing.JButton btnMain;
     private javax.swing.JButton btnMul;
     private javax.swing.JButton btnSub;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblSum;
+    private javax.swing.JLabel lblSum1;
+    private javax.swing.JLabel lblSum2;
+    private javax.swing.JLabel lblpro;
+    private javax.swing.JLabel lblquo;
     private javax.swing.JLabel sum;
     private javax.swing.JLabel sum2;
     private javax.swing.JTextField txtNum1;

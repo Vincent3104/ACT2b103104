@@ -40,8 +40,8 @@ public class division extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 71, -1));
-        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 71, -1));
+        getContentPane().add(txtNum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 90, -1));
+        getContentPane().add(txtNum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 42, 80, -1));
 
         lblQuo.setText("Quo");
         getContentPane().add(lblQuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 140, -1));
@@ -126,7 +126,7 @@ int num1 = Integer.parseInt(txtNum1.getText());
         int div = num1 / num2 ;
         
         
-        lblQuo.setText("The Quotient is" + div);        // TODO add your handling code here:
+        lblQuo.setText("The quotient is:" + div);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

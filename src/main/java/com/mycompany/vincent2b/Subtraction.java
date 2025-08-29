@@ -132,7 +132,7 @@ int num1 = Integer.parseInt(txtNum1.getText());
         int sub = num1 - num2 ;
         
         
-        diff.setText("The difference is" + sub);        // TODO add your handling code here:
+        diff.setText("The difference is:" + sub);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void txtNum2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNum2ActionPerformed
